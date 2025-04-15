@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Image Container</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			max-width: 300px; /* Limit container width */
+		}
+
+		.container img {
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 10px; /* Reduced margin */
+		}
+
+		.statement {
+			font-size: 14px; /* Reduced font size */
+			color: #333;
+			margin-bottom: 10px; /* Reduced margin */
+			text-align: center;
+		}
+
+		.button {
+			background-color: #007bff;
+			color: #fff;
+			border: none;
+			padding: 8px 15px; /* Reduced padding */
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="assets/img/qr.jpg" alt="Image">
+		<p class="statement">Your Booking is successfully done ! show this QR code For Parking Access.</p>
+		<button class="button">GO Back</button>
+	</div>
+</body>
+</html>

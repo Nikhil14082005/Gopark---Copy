@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Page</title>
+</head>
+<body>
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row gy-4 d-flex flex-column flex-lg-row justify-content-between">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h2 data-aos="fade-up">Your Secured Parking Partner</h2>
+          <p data-aos="fade-up" data-aos-delay="100">We are the fastest growing Parking App, With more than 1000 users we are the most efficient and secured parking partner.</p>
+
+          <form action="booking_process.php" method="POST" class="form-search d-flex flex-column flex-lg-row align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
+            <!-- Section 1: Dropdown for City selection -->
+            <select name="city" class="form-control mb-3 mb-lg-0">
+              <option value="city1">Nashik</option>
+              <option value="city2">Pune</option>
+              <option value="city3">Mumbai</option>
+              <!-- Add more city options as needed -->
+            </select>
+
+            <!-- Section 2: Dropdown for Parking Spot selection -->
+            <select name="parking-spot" class="form-control mb-3 mb-lg-0">
+              <option value="spot1">City Center</option>
+              <option value="spot2">Market</option>
+              <option value="spot3">Railway Station</option>
+              <!-- Add more parking spot options as needed -->
+            </select>
+
+            <!-- Section 3: Input field for Name -->
+            <input type="text" class="form-control mb-3 mb-lg-0" name="name" placeholder="Your Name" required>
+
+            <!-- Add any other fields as needed -->
+
+            <button type="submit" class="btn btn-primary">Search</button>
+          </form>
+
+          <form action="booking" method="POST" class="form-search d-flex flex-column flex-lg-row align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="300">
+            <!-- Section 4: Input field for Date with calendar option -->
+            <input type="date" class="form-control mb-3 mb-lg-0" name="date" required>
+
+            <!-- Section 5: Input field for Entry Time -->
+            <input type="time" class="form-control mb-3 mb-lg-0" name="entry-time" required>
+
+            <!-- Section 6: Input field for Leaving Time -->
+            <input type="time" class="form-control mb-3 mb-lg-0" name="leaving-time" required>
+
+            <!-- Add any other fields as needed -->
+
+            <button type="submit" class="btn btn-primary">Book Now</button>
+          </form>
+        </div>
+
+        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+          <img src="assets/img/hero-img.svg" class="img-fluid mb-3 mb-lg-0" alt="">
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <!-- Add any other sections or content as needed -->
+
+</body>
+</html>

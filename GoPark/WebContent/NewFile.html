@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Bar with Dropdown and Input Fields</title>
+  <style>
+    /* Styling for the search bar */
+    .search-bar {
+      display: flex;
+      align-items: center;
+    }
+
+    /* Styling for the input fields and the search button */
+    .search-bar input,
+    .search-bar select,
+    .search-bar button {
+      margin: 5px;
+      padding: 8px;
+    }
+
+    /* Styling for the search button */
+    .search-bar button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="search-bar">
+    <!-- Dropdown for parking spot selection -->
+    <select name="parking-spot">
+      <option value="spot1">Parking Spot 1</option>
+      <option value="spot2">Parking Spot 2</option>
+      <option value="spot3">Parking Spot 3</option>
+      <!-- Add more options as needed -->
+    </select>
+
+    <!-- Input field for your name -->
+    <input type="text" name="your-name" placeholder="Your Name" required>
+
+    <!-- Input field for the phone number -->
+    <input type="tel" name="phone-number" placeholder="Phone Number" required>
+
+    <!-- Search button -->
+    <button type="submit">Search</button>
+  </div>
+</body>
+</html>
